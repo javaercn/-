@@ -1,0 +1,3 @@
+#!/bin/bash
+read -p "Enter onr or more values >"
+echo "REPLY = '$REPLY'"

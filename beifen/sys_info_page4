@@ -1,0 +1,28 @@
+#!/bin/bash
+#Progrm to output a system information age
+title="System information report For $HOSTNAME"
+CURRENT_TIME=$(date+"%x %r %Z")
+TIME_STAMP="Generated $CURRENT_TIME,by $USER"
+report_uptime(){
+return
+}
+report_disk_space(){
+return
+}
+report_home_space(){
+return
+}
+cat << _EOF_
+<HTML>
+  <HEAD>
+            <TITLE>$title</Title>
+  </HEAD>
+<BODY>
+   <H1>$title</H1>
+   <p>$TIME_STAMP</p>
+   $(report_uptime)
+   $(report_disk_space)
+   $(report_home_space)
+</BODY>
+</HTML>
+_EOF_

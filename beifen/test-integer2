@@ -1,0 +1,23 @@
+#!/bin/bash
+INT=-5
+if [[ "$INT" =~ ^-?[0-9]+$ ]];then 
+             if((INT==0));then
+                  echo "INT is 0"
+              else
+                            if((INT<0));then
+                                   echo "-"
+                             else
+                                    echo "+"
+                             fi
+                          if(( ((INT%2))==0));then
+                                    echo "偶数"
+                           else
+                                     echo "jishu"
+                           fi
+                fi
+else
+   echo "INT is not shu" >&2
+  exit 1
+fi
+                                  
+

@@ -1,0 +1,8 @@
+#!/bin/bash
+echo -n "enter one or more values>"
+read va1 va2 va3 va4 va5
+echo "va1='$va1'"
+echo "va2='$va2'"
+echo "va3='$va3'"
+echo "va4='$va4'"
+echo "va5='$va5'"
